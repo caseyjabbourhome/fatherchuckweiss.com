@@ -269,7 +269,7 @@ a { color: inherit; }
 
 .author {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 48px;
@@ -280,6 +280,7 @@ a { color: inherit; }
   flex-shrink: 0;
   width: 431px;
   aspect-ratio: 431 / 420;
+  margin-top: 96px; /* line up with the heading, below .author-content's padding */
   border-radius: 50%;
   overflow: hidden;
 }
@@ -301,7 +302,7 @@ a { color: inherit; }
   line-height: 22px;
 }
 
-.author-content h2 { font-size: 36px; margin-bottom: 24px; }
+.author-content h2 { font-size: 52px; margin-bottom: 24px; }
 
 .author-content p + p { margin-top: 22px; }
 
@@ -338,7 +339,8 @@ a { color: inherit; }
   .card { width: 100%; max-width: 680px; }
   .cover { width: 340px; margin: 16px 0 -8px; z-index: 1; }
 
-  .author { flex-direction: column; text-align: left; padding-top: 72px; }
+  .author { flex-direction: column; align-items: center; text-align: left; padding-top: 72px; }
+  .author-photo { margin-top: 0; }
   .author-content { padding: 48px 0 72px; max-width: 721px; }
 }
 
@@ -364,7 +366,7 @@ a { color: inherit; }
   .author { padding: 56px 16px 0; }
   .author-content { padding: 40px 0 64px; }
   .author-photo { width: min(320px, 100%); }
-  .author-content h2 { font-size: 32px; }
+  .author-content h2 { font-size: 40px; }
 }
 
 @media (max-width: 640px) {

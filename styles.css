@@ -359,7 +359,7 @@ a { color: inherit; }
   .about-book { padding: 40px 16px 56px; }
   .card { padding: 64px 24px 40px; }
   .card h2 { font-size: 40px; }
-  .cover { width: 220px; }
+  .cover { width: min(320px, 85vw); margin: 8px 0 -16px; transform: none; }
 
   .author { padding: 56px 16px 0; }
   .author-content { padding: 40px 0 64px; }

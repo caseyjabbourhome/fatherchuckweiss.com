@@ -351,7 +351,7 @@ a { color: inherit; }
   .site-header.is-scrolled { padding-top: 14px; padding-bottom: 14px; }
   .site-header:not(.is-scrolled) .site-nav { color: var(--cream); }
 
-  .eyebrow { font-size: 20px; margin-bottom: 24px; }
+  .eyebrow { font-size: 16px; margin-bottom: 24px; }
   .title { font-size: 56px; line-height: 60px; }
   .subtitle { font-size: 34px; }
   .tagline { margin-bottom: 40px; }

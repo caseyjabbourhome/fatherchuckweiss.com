@@ -307,7 +307,7 @@ a { color: inherit; }
 
 .author-content .speaking { margin-top: 24px; font-weight: 500; }
 
-.author-content .button { margin-top: 48px; font-size: 16px; }
+.author-content .button { margin-top: 36px; padding: 16px; font-size: 16px; }
 
 /* Footer */
 

@@ -371,6 +371,13 @@ a { color: inherit; }
   /* Not enough room for the book title and all four links */
   .site-name { display: none; }
   .site-header { justify-content: center; }
+
+  .hero-content { align-items: center; text-align: center; }
+
+  .card p:not(.part-label),
+  .part h3 { font-size: 14px; }
+  .author-content p { font-size: 14px; line-height: 20px; }
+  .author-content p + p { margin-top: 20px; }
 }
 
 @media (max-width: 420px) {

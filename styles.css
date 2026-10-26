@@ -381,7 +381,7 @@ a { color: inherit; }
 }
 
 @media (max-width: 420px) {
-  .title { font-size: 46px; line-height: 50px; }
-  .subtitle { font-size: 28px; }
+  .title { font-size: 50px; line-height: 54px; }
+  .subtitle { font-size: 32px; }
   .button { font-size: 18px; padding: 20px 24px; }
 }

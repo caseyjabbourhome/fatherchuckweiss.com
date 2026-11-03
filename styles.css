@@ -2,7 +2,6 @@
   --cream: #fff5d8;
   --maroon: #823837;
   --orange: #d05e2c;
-  --peach: #ecb993; /* the orange at 40% over cream */
   --ink: #111;
   --serif: "Instrument Serif", Georgia, serif;
   --sans: "Inter", system-ui, -apple-system, sans-serif;
@@ -81,15 +80,28 @@ a { color: inherit; }
 
 .is-scrolled .site-name { color: var(--ink); }
 
-.site-nav { display: flex; gap: 12px; }
+.site-nav { display: flex; align-items: center; gap: 12px; }
 
-.site-nav a { text-decoration: none; }
+.site-nav a { text-decoration: none; white-space: nowrap; }
 
 .site-nav a:hover,
 .site-nav a:focus-visible,
 .site-nav a[aria-current] { text-decoration: underline; }
 
 .site-nav a[aria-current] { font-weight: 500; }
+
+.site-nav .nav-button {
+  padding: 10px;
+  border-radius: 42px;
+  background: var(--orange);
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.15s;
+}
+
+.site-nav .nav-button:hover,
+.site-nav .nav-button:focus-visible { background: #b44d20; text-decoration: none; }
 
 /* Hero */
 
@@ -184,6 +196,8 @@ a { color: inherit; }
   border: 0;
   border-top: 2px solid var(--maroon);
 }
+
+.card strong { font-weight: 600; }
 
 .parts { display: flex; flex-direction: column; gap: 12px; }
 
@@ -315,14 +329,16 @@ a { color: inherit; }
 .site-footer {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 24px;
   min-height: 76px;
-  padding: 16px;
-  background: var(--peach);
+  padding: 16px 48px; /* same side gutters as the header */
+  background: var(--maroon);
+  color: var(--cream);
   font-size: 12px;
 }
 
-.site-footer nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; }
+.site-footer nav { display: flex; gap: 24px; }
 
 .site-footer a { text-decoration: none; }
 
@@ -350,6 +366,7 @@ a { color: inherit; }
   .hero-content { padding: 48px 16px 64px; width: auto; }
 
   .site-header { padding: 24px 16px; }
+  .site-footer { padding: 16px; }
   .site-header.is-scrolled { padding-top: 14px; padding-bottom: 14px; }
   .site-header:not(.is-scrolled) .site-nav { color: var(--cream); }
 
@@ -370,9 +387,8 @@ a { color: inherit; }
 }
 
 @media (max-width: 640px) {
-  /* Not enough room for the book title and all four links */
-  .site-name { display: none; }
-  .site-header { justify-content: center; }
+  /* Phones: the title plus just the Get the book button */
+  .site-nav a:not(.nav-button) { display: none; }
 
   .hero-content { align-items: center; text-align: center; }
 

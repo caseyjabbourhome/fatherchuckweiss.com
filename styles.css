@@ -155,7 +155,7 @@ a { color: inherit; }
 }
 
 .tagline {
-  margin: 24px 0 64px;
+  margin: 24px 0;
   color: var(--maroon);
   font-size: 18px;
   line-height: 1.25;
@@ -383,7 +383,7 @@ a { color: inherit; }
   .eyebrow { font-size: 16px; margin-bottom: 24px; }
   .title { font-size: 56px; line-height: 60px; }
   .subtitle { font-size: 34px; }
-  .tagline { margin-bottom: 40px; }
+
 
   .about-book { padding: 40px 16px 56px; }
   .card { padding: 64px 24px 40px; }

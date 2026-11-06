@@ -161,6 +161,16 @@ a { color: inherit; }
   line-height: 1.25;
 }
 
+/* Sits with the button as one group, until the book is for sale */
+.coming-soon {
+  margin-bottom: 16px;
+  color: var(--maroon);
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.coming-soon strong { font-weight: 600; }
+
 /* About the book */
 
 .about-book {

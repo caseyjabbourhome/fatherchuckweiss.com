@@ -155,21 +155,11 @@ a { color: inherit; }
 }
 
 .tagline {
-  margin: 24px 0;
+  margin: 24px 0 64px;
   color: var(--maroon);
   font-size: 18px;
   line-height: 1.25;
 }
-
-/* Sits with the button as one group, until the book is for sale */
-.coming-soon {
-  margin-bottom: 16px;
-  color: var(--maroon);
-  font-size: 16px;
-  line-height: 1.4;
-}
-
-.coming-soon strong { font-weight: 600; }
 
 /* About the book */
 
@@ -381,6 +371,7 @@ a { color: inherit; }
   .site-header:not(.is-scrolled) .site-nav { color: var(--cream); }
 
   .eyebrow { font-size: 16px; margin-bottom: 24px; }
+  .tagline { margin-bottom: 40px; }
   .title { font-size: 56px; line-height: 60px; }
   .subtitle { font-size: 34px; }
 
